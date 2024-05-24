@@ -32,7 +32,7 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     basket_page.should_be_empty_message()
 @pytest.mark.active
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
-    link ="http://selenium1py.pythonanywhere.com/ru/catalogue/the-shellcoders-handbook_209/"
+    link ="http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-shellcoders-handbook_209/"
     page = ProductPage(browser,link)
     page.open()
     page.go_to_cart()
